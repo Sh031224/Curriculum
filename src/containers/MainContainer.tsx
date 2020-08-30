@@ -1,12 +1,30 @@
 import React from "react";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
-import information from "../data/information";
+import header from "../data/header";
+import ReactFullpage from "@fullpage/react-fullpage";
+import Section from "../components/common/Section";
 
 const MainContainer = () => {
   return (
     <>
-      <Header title={information.title} />
+      <ReactFullpage
+        //fullpage options
+        licenseKey={"YOUR_KEY_HERE"}
+        scrollingSpeed={1000} /* Options here */
+        render={() => {
+          return (
+            <ReactFullpage.Wrapper>
+              <Section>
+                <Header nav={header.nav} />
+              </Section>
+              <div className="section">
+                <p>Section 2</p>
+              </div>
+            </ReactFullpage.Wrapper>
+          );
+        }}
+      />
       <Nav />
     </>
   );

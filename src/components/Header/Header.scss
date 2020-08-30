@@ -1,22 +1,19 @@
+@import "../../util/colors.scss";
+
 header {
   display: flex;
-  justify-content: center;
-  background-color: #fff;
-  box-shadow: #00000062 0px 3px 10px;
-  z-index: 10;
-  .header {
-    &-box {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      max-width: 1100px;
-      padding: 0.3rem 0;
-      &-title {
-        font-size: 2rem;
-        font-weight: 700;
-        letter-spacing: -0.3px;
-        cursor: pointer;
-      }
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  padding: 0.3rem 0;
+  color: $ft-white;
+  color: var(--ft-white);
+  justify-content: space-between;
+  align-items: center;
+  nav {
+    span {
+      font-weight: 300;
+      margin: 0 3rem;
     }
   }
 }
