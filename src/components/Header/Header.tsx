@@ -2,15 +2,25 @@ import React from "react";
 import "./Header.scss";
 
 interface HeaderProps {
-  title: string;
+  nav: NavType[];
 }
 
-const Header = ({ title }: HeaderProps) => {
+interface NavType {
+  name: string;
+  id: string;
+}
+
+const Header = ({ nav }: HeaderProps) => {
   return (
     <header>
-      <div className="header-box">
-        <div className="header-box-title">{title}</div>
-      </div>
+      <div></div>
+      <nav>
+        {nav.map((nav: NavType) => {
+          <a href={nav.id}>
+            <span>{nav.name}</span>
+          </a>;
+        })}
+      </nav>
     </header>
   );
 };
