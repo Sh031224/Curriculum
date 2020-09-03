@@ -1,6 +1,6 @@
 import React from "react";
-import titleImage from "../../assets/images/title_image.png";
-import logoImage from "../../assets/images/logo.png";
+import titleImage from "../../assets/images/title_image.svg";
+import logoImage from "../../assets/images/logo.svg";
 import "./Header.scss";
 
 interface HeaderProps {
