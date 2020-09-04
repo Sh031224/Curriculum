@@ -1,9 +1,11 @@
 import React from "react";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
-import header from "../data/header";
+import headerData from "../data/header";
+import homeData from "../data/home";
 import ReactFullpage from "@fullpage/react-fullpage";
 import Section from "../components/common/Section";
+import Home from "../components/Home";
 
 const MainContainer = () => {
   return (
@@ -16,7 +18,8 @@ const MainContainer = () => {
           return (
             <ReactFullpage.Wrapper>
               <Section>
-                <Header nav={header.nav} />
+                <Header nav={headerData} />
+                <Home data={homeData} />
               </Section>
               <div className="section">
                 <p>Section 2</p>
