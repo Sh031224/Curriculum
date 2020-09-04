@@ -1,0 +1,15 @@
+@import "../../util/colors.scss";
+
+.home {
+  width: 100%;
+  padding-top: 8rem;
+  &-position {
+    font-weight: 300;
+    color: $ft-white;
+    color: var(--ft-white);
+    letter-spacing: 1.5rem;
+    font-size: 1.9rem;
+  }
+  &-title {
+  }
+}
